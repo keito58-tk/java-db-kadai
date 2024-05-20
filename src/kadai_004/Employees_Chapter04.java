@@ -14,7 +14,7 @@ public class Employees_Chapter04 {
 		try {
 			//データベースに接続
 			con = DriverManager.getConnection(
-				"jdbc:mysql://localhost/java_db",
+				"jdbc:mysql://localhost/challenge_java",
 				"root",	
 				"A8*kR@h%L1vZ0&cM"
 			);
@@ -27,6 +27,7 @@ public class Employees_Chapter04 {
 					CREATE TABLE employees(
 					id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
 					name VARCHAR(60) NOT NULL,
+					email VARCHAR(255) NOT NULL,
 					age INT(11),
 					address VARCHAR(255)
 					);
